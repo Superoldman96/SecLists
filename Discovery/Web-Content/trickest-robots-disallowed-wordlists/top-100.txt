@@ -2642,8 +2642,8 @@ hotelfinder/rpc
 hotels/rpc
 hp/video
 hpc/*/supported-applications.aspx?
-http://amazon.co.uk/robots.txt
-http://i2.wp.com/robots.txt
+http://m.facebook.com/robots.txt
+http://tinyurl.com/robots.txt
 hub?category=
 hz/contact-us/ajax/initiate-trusted-contact
 hz/help/contact/*/message/$
@@ -3428,7 +3428,7 @@ no-en/transactions
 no-en/treasury
 no-en/your
 nonprofits/account
-not_recommended_reviews/preview
+not_recommended_reviews
 notifications
 nova
 ns/hydra/console/?
@@ -3548,6 +3548,7 @@ people
 people/iweReconnectAction
 pepe
 phone/compare/?
+photo
 photos/*/lightbox
 photos/app_store_link
 photos/archivesact/6011019532/nearby
@@ -3987,7 +3988,7 @@ shopping/reviewer
 shopping/seller
 shopping/suppliers/search
 shopping?
-showtimes/location/*http://patreon.com/robots.txt
+showtimes/location/*http://apis.google.com/robots.txt
 sidewiki/entry
 signature
 signin/inject
@@ -4364,8 +4365,12 @@ subscribe/onsiteapi
 subscribe/paywall
 subscribe/person
 subscribe/preferenceapi
+subscribe/signin
+subscribe/signup
 subscribe/subscriptionapi
 subscribe/user
+subscription/*?*onboarded=
+subscription/*?*source=
 subscriptions
 summerbzz
 support
@@ -4644,7 +4649,7 @@ users
 using
 utils
 uviewer
-v1/*http://w3.org/robots.txt
+v1
 v1/browser-performance
 v1/stats
 v4
@@ -5124,12 +5129,14 @@ wp-admin/load-scripts.php
 wp-admin/load-styles.php
 wp-adv
 wp-dyn
+wp-srv
 wp-stat/ad
 wp-stat/vrroom
 wpost/proxy
 write-
 writeareview
 ws/includes
+wv
 xclick-auction
 xdoor
 xfx7
