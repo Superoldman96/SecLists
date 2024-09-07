@@ -544,6 +544,28 @@ ghost/html-to-plaintext/test/html-to-plaintext.test.js
 ghost/html-to-plaintext/test/.eslintrc.js
 ghost/html-to-plaintext/README.md
 ghost/tsconfig.json
+ghost/tinybird/.tinyenv
+ghost/tinybird/pipes/top_pages.pipe
+ghost/tinybird/pipes/top_devices.pipe
+ghost/tinybird/pipes/analytics_hits.pipe
+ghost/tinybird/pipes/trend.pipe
+ghost/tinybird/pipes/top_locations.pipe
+ghost/tinybird/pipes/top_browsers.pipe
+ghost/tinybird/pipes/analytics_sessions.pipe
+ghost/tinybird/pipes/top_sources.pipe
+ghost/tinybird/pipes/analytics_sources.pipe
+ghost/tinybird/pipes/analytics_pages.pipe
+ghost/tinybird/pipes/kpis.pipe
+ghost/tinybird/scripts/append_fixtures.sh
+ghost/tinybird/scripts/exec_test.sh
+ghost/tinybird/requirements.txt
+ghost/tinybird/datasources/analytics_pages_mv.datasource
+ghost/tinybird/datasources/analytics_sessions_mv.datasource
+ghost/tinybird/datasources/analytics_sources_mv.datasource
+ghost/tinybird/datasources/fixtures/mockingbird-schema.json
+ghost/tinybird/datasources/fixtures/README.md
+ghost/tinybird/datasources/analytics_events.datasource
+ghost/tinybird/README.md
 ghost/stripe/lib/WebhookManager.js
 ghost/stripe/lib/StripeAPI.js
 ghost/stripe/lib/StripeService.js
@@ -1088,6 +1110,7 @@ ghost/admin/public/assets/icons/copy.svg
 ghost/admin/public/assets/icons/sidemenu-open.svg
 ghost/admin/public/assets/icons/satellite.svg
 ghost/admin/public/assets/icons/member.svg
+ghost/admin/public/assets/icons/stats-outline.svg
 ghost/admin/public/assets/icons/plus-large.svg
 ghost/admin/public/assets/icons/filter.svg
 ghost/admin/public/assets/icons/keyboard.svg
@@ -1207,6 +1230,7 @@ ghost/admin/tests/acceptance/editor/lexical-test.js
 ghost/admin/tests/acceptance/editor/publish-flow-test.js
 ghost/admin/tests/acceptance/editor/post-email-preview-test.js
 ghost/admin/tests/acceptance/editor/post-revisions-test.js
+ghost/admin/tests/acceptance/editor/unsaved-changes-test.js
 ghost/admin/tests/acceptance/signup-test.js
 ghost/admin/tests/acceptance/members-test.js
 ghost/admin/tests/acceptance/setup-test.js
@@ -1258,7 +1282,6 @@ ghost/admin/tests/integration/modifiers/validation-status-test.js
 ghost/admin/tests/integration/models/post-test.js
 ghost/admin/tests/integration/models/tag-test.js
 ghost/admin/tests/integration/models/user-test.js
-ghost/admin/tests/.eslintrc.js
 ghost/admin/tests/unit/transforms/facebook-url-user-test.js
 ghost/admin/tests/unit/transforms/navigation-settings-test.js
 ghost/admin/tests/unit/transforms/json-string-test.js
@@ -1594,8 +1617,23 @@ ghost/admin/app/services/migrate.js
 ghost/admin/app/services/media-queries.js
 ghost/admin/app/services/modals.js
 ghost/admin/app/services/onboarding.js
+ghost/admin/app/components/stats/kpis-overview.js
+ghost/admin/app/components/stats/parts/audience-filter.hbs
+ghost/admin/app/components/stats/parts/audience-filter.js
+ghost/admin/app/components/stats/parts/metric.hbs
+ghost/admin/app/components/stats/technical-overview.hbs
+ghost/admin/app/components/stats/technical-overview.js
+ghost/admin/app/components/stats/charts/top-sources.js
+ghost/admin/app/components/stats/charts/kpis.js
 ghost/admin/app/components/stats/charts/top-locations.js
+ghost/admin/app/components/stats/charts/technical.js
+ghost/admin/app/components/stats/charts/top-sources.hbs
+ghost/admin/app/components/stats/charts/top-pages.js
 ghost/admin/app/components/stats/charts/top-locations.hbs
+ghost/admin/app/components/stats/charts/technical.hbs
+ghost/admin/app/components/stats/charts/top-pages.hbs
+ghost/admin/app/components/stats/charts/kpis.hbs
+ghost/admin/app/components/stats/kpis-overview.hbs
 ghost/admin/app/components/gh-facebook-url-input.js
 ghost/admin/app/components/gh-editor-feature-image.hbs
 ghost/admin/app/components/gh-migrate-modal.hbs
@@ -2056,6 +2094,7 @@ ghost/admin/app/utils/bound-one-way.js
 ghost/admin/app/utils/slug-url.js
 ghost/admin/app/utils/ctrl-or-cmd.js
 ghost/admin/app/utils/publish-options.js
+ghost/admin/app/utils/stats.js
 ghost/admin/app/utils/currency.js
 ghost/admin/app/utils/merge-stats-by-date.js
 ghost/admin/app/utils/ghost-paths.js
@@ -2463,6 +2502,7 @@ ghost/mailgun-client/test/fixtures/all-1.json
 ghost/mailgun-client/test/fixtures/latest-2.json
 ghost/mailgun-client/test/fixtures/all-2-eu.json
 ghost/mailgun-client/test/fixtures/all-2.json
+ghost/mailgun-client/test/fixtures/send-success.json
 ghost/mailgun-client/test/fixtures/latest-1.json
 ghost/mailgun-client/test/fixtures/all-1-timestamp.json
 ghost/mailgun-client/test/fixtures/all-1-eu.json
@@ -3248,6 +3288,7 @@ ghost/core/core/server/data/migrations/versions/4.43/2022-04-01-10-13-add-post-n
 ghost/core/core/server/data/migrations/versions/4.43/2022-04-08-10-45-add-subscription-id-to-mrr-events.js
 ghost/core/core/server/data/migrations/versions/4.43/2022-04-06-14-56-add-email-newsletter-relation.js
 ghost/core/core/server/data/migrations/versions/4.43/2022-03-29-14-45-add-members-newsletters-table.js
+ghost/core/core/server/data/migrations/versions/5.93/2024-09-03-18-51-01-update-stripe-prices-nickname-length.js
 ghost/core/core/server/data/migrations/versions/5.14/2022-09-02-12-55-rename-members-bio-to-expertise.js
 ghost/core/core/server/data/migrations/versions/5.56/2023-07-15-10-11-12-update-members-email-disabled-field.js
 ghost/core/core/server/data/migrations/versions/5.56/2023-07-14-10-11-12-add-email-disabled-field-to-members.js
@@ -3286,6 +3327,7 @@ ghost/core/core/server/data/migrations/versions/5.61/2023-08-29-10-17-add-recomm
 ghost/core/core/server/data/migrations/versions/5.61/2023-08-30-07-37-04-add-recommendations-enabled-settings.js
 ghost/core/core/server/data/migrations/versions/5.61/2023-08-29-11-39-10-add-recommendations-table.js
 ghost/core/core/server/data/migrations/versions/5.35/2023-02-13-06-24-add-mentions-verified-column.js
+ghost/core/core/server/data/migrations/versions/5.94/2024-09-03-20-09-40-null-analytics-jobs-timings.js
 ghost/core/core/server/data/migrations/versions/5.25/2022-11-24-10-37-add-email-spam-complaint-events-table.js
 ghost/core/core/server/data/migrations/versions/5.25/2022-11-29-08-30-add-error-recipient-failures-table.js
 ghost/core/core/server/data/migrations/versions/5.25/2022-11-24-10-36-add-suppressions-table.js
@@ -4439,6 +4481,7 @@ ghost/core/test/e2e-frontend/advanced_url_config.test.js
 ghost/core/test/e2e-frontend/helpers/next_post.test.js
 ghost/core/test/e2e-frontend/helpers/get.test.js
 ghost/core/test/e2e-frontend/default_routes.test.js
+ghost/core/test/e2e-frontend/site_id_middleware.test.js
 ghost/core/test/e2e-frontend/custom_routes.test.js
 ghost/core/test/e2e-frontend/middleware.test.js
 ghost/core/test/e2e-frontend/email_routes.test.js
@@ -4552,6 +4595,7 @@ apps/admin-x-activitypub/index.html
 apps/admin-x-activitypub/src/MainContent.tsx
 apps/admin-x-activitypub/src/api/activitypub.test.ts
 apps/admin-x-activitypub/src/api/activitypub.ts
+apps/admin-x-activitypub/src/hooks/useActivityPubQueries.ts
 apps/admin-x-activitypub/src/components/Search.tsx
 apps/admin-x-activitypub/src/components/global/APAvatar.tsx
 apps/admin-x-activitypub/src/components/Activities.tsx
@@ -4651,6 +4695,7 @@ apps/portal/src/components/Notification.styles.js
 apps/portal/src/components/TriggerButton.styles.js
 apps/portal/src/components/TriggerButton.test.js
 apps/portal/src/utils/check-mode.js
+apps/portal/src/utils/transform-portal-anchor-to-relative.js
 apps/portal/src/utils/api.js
 apps/portal/src/utils/test-fixtures.js
 apps/portal/src/utils/helpers.js
@@ -4673,6 +4718,8 @@ apps/portal/src/tests/SignupFlow.test.js
 apps/portal/src/tests/SigninFlow.test.js
 apps/portal/src/tests/FeedbackFlow.test.js
 apps/portal/src/tests/portal-links.test.js
+apps/portal/src/tests/App.test.js
+apps/portal/src/tests/unit/transform-portal-anchor-to-relative.test.js
 apps/portal/src/tests/EmailSubscriptionsFlow.test.js
 apps/portal/src/tests/UpgradeFlow.test.js
 apps/portal/src/App.test.js
@@ -5129,6 +5176,7 @@ apps/admin-x-design-system/src/assets/icons/tags-block.svg
 apps/admin-x-design-system/src/assets/icons/hamburger.svg
 apps/admin-x-design-system/src/assets/icons/emailfield.svg
 apps/admin-x-design-system/src/assets/icons/textfield.svg
+apps/admin-x-design-system/src/assets/icons/heart-fill.svg
 apps/admin-x-design-system/src/assets/icons/portal.svg
 apps/admin-x-design-system/src/assets/icons/import.svg
 apps/admin-x-design-system/src/assets/icons/like.svg
@@ -5215,6 +5263,7 @@ apps/admin-x-design-system/src/assets/icons/thumbs-up.svg
 apps/admin-x-design-system/src/assets/icons/listview.svg
 apps/admin-x-design-system/src/assets/icons/warning.svg
 apps/admin-x-design-system/src/assets/icons/single-user-fill.svg
+apps/admin-x-design-system/src/assets/icons/user-fill.svg
 apps/admin-x-design-system/src/assets/icons/error-fill.svg
 apps/admin-x-design-system/src/assets/icons/finger-up.svg
 apps/admin-x-design-system/src/assets/images/ghost-logo.svg
