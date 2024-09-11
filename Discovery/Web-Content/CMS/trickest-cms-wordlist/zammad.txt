@@ -1700,6 +1700,7 @@ app/views/mailer/user_device_new_location/en.html.erb
 app/views/mailer/user_device_new_location/zh-tw.html.erb
 app/views/mailer/test_ticket/ru.html.erb
 app/views/mailer/test_ticket/sv.html.erb
+app/views/mailer/test_ticket/ro.html.erb
 app/views/mailer/test_ticket/hu.html.erb
 app/views/mailer/test_ticket/fr.html.erb
 app/views/mailer/test_ticket/hr.html.erb
@@ -1795,6 +1796,7 @@ app/views/mailer/ticket_update_received_merge/da.html.erb
 app/views/mailer/ticket_update_received_merge/ru.html.erb
 app/views/mailer/ticket_update_received_merge/bg.html.erb
 app/views/mailer/ticket_update_received_merge/sv.html.erb
+app/views/mailer/ticket_update_received_merge/ro.html.erb
 app/views/mailer/ticket_update_received_merge/hu.html.erb
 app/views/mailer/ticket_update_received_merge/fr.html.erb
 app/views/mailer/ticket_update_received_merge/hr.html.erb
@@ -1810,12 +1812,14 @@ app/views/mailer/ticket_update_received_merge/pt.html.erb
 app/views/mailer/ticket_update_received_merge/pt-br.html.erb
 app/views/mailer/ticket_update_received_merge/th.html.erb
 app/views/mailer/ticket_update_received_merge/lt.html.erb
+app/views/mailer/ticket_update_received_merge/fa.html.erb
 app/views/mailer/ticket_update_received_merge/cs.html.erb
 app/views/mailer/ticket_update_received_merge/it.html.erb
 app/views/mailer/ticket_update_received_merge/tr.html.erb
 app/views/mailer/ticket_update_received_merge/en.html.erb
 app/views/mailer/signup/ru.html.erb
 app/views/mailer/signup/sv.html.erb
+app/views/mailer/signup/ro.html.erb
 app/views/mailer/signup/hu.html.erb
 app/views/mailer/signup/fr.html.erb
 app/views/mailer/signup/hr.html.erb
@@ -1836,6 +1840,7 @@ app/views/mailer/signup/en.html.erb
 app/views/mailer/signup/zh-tw.html.erb
 app/views/mailer/ticket_update_merged_into/ru.html.erb
 app/views/mailer/ticket_update_merged_into/sv.html.erb
+app/views/mailer/ticket_update_merged_into/ro.html.erb
 app/views/mailer/ticket_update_merged_into/hu.html.erb
 app/views/mailer/ticket_update_merged_into/fr.html.erb
 app/views/mailer/ticket_update_merged_into/hr.html.erb
@@ -1852,6 +1857,7 @@ app/views/mailer/ticket_update_merged_into/it.html.erb
 app/views/mailer/ticket_update_merged_into/en.html.erb
 app/views/mailer/ticket_reminder_reached/ru.html.erb
 app/views/mailer/ticket_reminder_reached/sv.html.erb
+app/views/mailer/ticket_reminder_reached/ro.html.erb
 app/views/mailer/ticket_reminder_reached/fr.html.erb
 app/views/mailer/ticket_reminder_reached/hr.html.erb
 app/views/mailer/ticket_reminder_reached/de.html.erb
@@ -1876,6 +1882,7 @@ app/views/mailer/email_oversized/sr-latn-rs.txt.erb
 app/views/mailer/email_oversized/sv.txt.erb
 app/views/mailer/email_oversized/pl.txt.erb
 app/views/mailer/email_oversized/pt-br.txt.erb
+app/views/mailer/email_oversized/ro.txt.erb
 app/views/mailer/email_oversized/nl.txt.erb
 app/views/mailer/email_oversized/de.txt.erb
 app/views/mailer/email_oversized/cs.txt.erb
@@ -1888,6 +1895,7 @@ app/views/mailer/email_oversized/ru.txt.erb
 app/views/mailer/application_wrapper.html.erb
 app/views/mailer/password_change/ru.html.erb
 app/views/mailer/password_change/sv.html.erb
+app/views/mailer/password_change/ro.html.erb
 app/views/mailer/password_change/hu.html.erb
 app/views/mailer/password_change/fr.html.erb
 app/views/mailer/password_change/hr.html.erb
@@ -1908,6 +1916,7 @@ app/views/mailer/password_change/zh-tw.html.erb
 app/views/mailer/admin_password_auth/ru.html.erb
 app/views/mailer/admin_password_auth/bg.html.erb
 app/views/mailer/admin_password_auth/sv.html.erb
+app/views/mailer/admin_password_auth/ro.html.erb
 app/views/mailer/admin_password_auth/hu.html.erb
 app/views/mailer/admin_password_auth/fr.html.erb
 app/views/mailer/admin_password_auth/hr.html.erb
@@ -1949,6 +1958,7 @@ app/views/mailer/signup_taken_reset/tr.html.erb
 app/views/mailer/signup_taken_reset/en.html.erb
 app/views/mailer/ticket_update/ru.html.erb
 app/views/mailer/ticket_update/sv.html.erb
+app/views/mailer/ticket_update/ro.html.erb
 app/views/mailer/ticket_update/hu.html.erb
 app/views/mailer/ticket_update/fr.html.erb
 app/views/mailer/ticket_update/hr.html.erb
@@ -1961,6 +1971,7 @@ app/views/mailer/ticket_update/sr.html.erb
 app/views/mailer/ticket_update/nl.html.erb
 app/views/mailer/ticket_update/pt-br.html.erb
 app/views/mailer/ticket_update/lt.html.erb
+app/views/mailer/ticket_update/fa.html.erb
 app/views/mailer/ticket_update/cs.html.erb
 app/views/mailer/ticket_update/it.html.erb
 app/views/mailer/ticket_update/en.html.erb
@@ -1981,6 +1992,7 @@ app/views/mailer/ticket_create/nl.html.erb
 app/views/mailer/ticket_create/pt-br.html.erb
 app/views/mailer/ticket_create/lt.html.erb
 app/views/mailer/ticket_create/sk.html.erb
+app/views/mailer/ticket_create/fa.html.erb
 app/views/mailer/ticket_create/cs.html.erb
 app/views/mailer/ticket_create/it.html.erb
 app/views/mailer/ticket_create/tr.html.erb
@@ -2009,6 +2021,7 @@ app/views/mailer/ticket_escalation/en.html.erb
 app/views/mailer/ticket_escalation/zh-tw.html.erb
 app/views/mailer/ticket_escalation_warning/ru.html.erb
 app/views/mailer/ticket_escalation_warning/sv.html.erb
+app/views/mailer/ticket_escalation_warning/ro.html.erb
 app/views/mailer/ticket_escalation_warning/hu.html.erb
 app/views/mailer/ticket_escalation_warning/fr.html.erb
 app/views/mailer/ticket_escalation_warning/hr.html.erb
@@ -7433,6 +7446,7 @@ db/migrate/20180306084119_custom_html_email_css_font.rb
 db/migrate/20211028094326_issue_3245_office_365_microsoft_rename.rb
 db/migrate/20180320000001_setting_table_group_by_show_count.rb
 db/migrate/20200522125253_issue_2943_add_setting_enforce_special_character.rb
+db/migrate/20240906090321_drop_unused_article_references.rb
 db/migrate/20180418000001_setting_third_party_link_account_at_login.rb
 db/migrate/20210701131549_issue_3579_new_scheduler.rb
 db/migrate/20170123000002_fixed_translation.rb
@@ -7645,6 +7659,7 @@ db/migrate/20190713000001_group_dependent_macros.rb
 db/migrate/20231129085408_drop_removed_state.rb
 db/migrate/20240607144905_ensure_no_commas_and_asterisks_in_tag_names.rb
 db/migrate/20220119102815_issue3924_confirmation_dialog.rb
+db/migrate/20240906135440_add_more_missing_permissions.rb
 db/migrate/20230426143104_add_ticket_duplicate_detection.rb
 db/migrate/20171102000001_last_owner_update2.rb
 db/migrate/20211004111501_reload_after_core_workflow_again.rb
@@ -8201,6 +8216,7 @@ spec/system/apps/desktop/admin_password_auth_spec.rb
 spec/system/apps/desktop/login_spec.rb
 spec/system/apps/mobile/account_spec.rb
 spec/system/apps/mobile/login_spec.rb
+spec/system/apps/mobile/favorite_spec.rb
 spec/system/apps/mobile_old/user/detail_view_edit_spec.rb
 spec/system/apps/mobile_old/user/detail_view_spec.rb
 spec/system/apps/mobile_old/basic/invalid_session_handling_spec.rb
