@@ -679,10 +679,12 @@ ghost/staff-service/README.md
 ghost/members-events-service/lib/index.js
 ghost/members-events-service/lib/EventStorage.js
 ghost/members-events-service/lib/LastSeenAtUpdater.js
+ghost/members-events-service/lib/LastSeenAtCache.js
 ghost/members-events-service/index.js
 ghost/members-events-service/package.json
 ghost/members-events-service/.eslintrc.js
 ghost/members-events-service/test/event-storage.test.js
+ghost/members-events-service/test/last-seen-at-cache.test.js
 ghost/members-events-service/test/last-seen-at-updater.test.js
 ghost/members-events-service/test/utils/index.js
 ghost/members-events-service/test/utils/overrides.js
@@ -1217,6 +1219,7 @@ ghost/admin/tests/helpers/login-as-role.js
 ghost/admin/tests/helpers/newsletters.js
 ghost/admin/tests/helpers/visit.js
 ghost/admin/tests/helpers/forms.js
+ghost/admin/tests/helpers/editor.js
 ghost/admin/tests/helpers/members.js
 ghost/admin/tests/helpers/file-upload.js
 ghost/admin/tests/acceptance/mentions-test.js
@@ -1253,6 +1256,7 @@ ghost/admin/tests/integration/helpers/activity-feed-fetcher-test.js
 ghost/admin/tests/integration/helpers/gh-url-preview-test.js
 ghost/admin/tests/integration/adapters/tag-test.js
 ghost/admin/tests/integration/adapters/user-test.js
+ghost/admin/tests/integration/services/local-revisions-test.js
 ghost/admin/tests/integration/services/ajax-test.js
 ghost/admin/tests/integration/services/slug-generator-test.js
 ghost/admin/tests/integration/services/config-test.js
@@ -1304,6 +1308,7 @@ ghost/admin/tests/unit/helpers/gh-count-characters-test.js
 ghost/admin/tests/unit/helpers/most-relevant-subscription-test.js
 ghost/admin/tests/unit/mixins/validation-engine-test.js
 ghost/admin/tests/unit/authenticators/cookie-test.js
+ghost/admin/tests/unit/services/local-revisions-test.js
 ghost/admin/tests/unit/services/notifications-test.js
 ghost/admin/tests/unit/services/member-stats-test.js
 ghost/admin/tests/unit/services/event-bus-test.js
@@ -1537,7 +1542,6 @@ ghost/admin/app/templates/offer.hbs
 ghost/admin/app/templates/lexical-editor.hbs
 ghost/admin/app/templates/setup.hbs
 ghost/admin/app/templates/collection.hbs
-ghost/admin/app/templates/react-editor/edit-loading.hbs
 ghost/admin/app/templates/activitypub-x.hbs
 ghost/admin/app/templates/signup.hbs
 ghost/admin/app/templates/pages.hbs
@@ -1596,6 +1600,7 @@ ghost/admin/app/services/resize-detector.js
 ghost/admin/app/services/whats-new.js
 ghost/admin/app/services/custom-theme-settings.js
 ghost/admin/app/services/limit.js
+ghost/admin/app/services/local-revisions.js
 ghost/admin/app/services/ghost-paths.js
 ghost/admin/app/services/session.js
 ghost/admin/app/services/clock.js
@@ -2700,6 +2705,7 @@ ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/authors.js
 ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/emails.js
 ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/tags.js
 ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/collections.js
+ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/oembed.js
 ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/index.js
 ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/mentions.js
 ghost/core/core/server/api/endpoints/utils/serializers/output/mappers/posts.js
@@ -4609,6 +4615,7 @@ apps/admin-x-activitypub/src/api/activitypub.test.ts
 apps/admin-x-activitypub/src/api/activitypub.ts
 apps/admin-x-activitypub/src/hooks/useActivityPubQueries.ts
 apps/admin-x-activitypub/src/components/Search.tsx
+apps/admin-x-activitypub/src/components/global/APReplyBox.tsx
 apps/admin-x-activitypub/src/components/global/APAvatar.tsx
 apps/admin-x-activitypub/src/components/Activities.tsx
 apps/admin-x-activitypub/src/components/Inbox.tsx
@@ -5235,6 +5242,7 @@ apps/admin-x-design-system/src/assets/icons/palette.svg
 apps/admin-x-design-system/src/assets/icons/layer.svg
 apps/admin-x-design-system/src/assets/icons/money-bags.svg
 apps/admin-x-design-system/src/assets/icons/add.svg
+apps/admin-x-design-system/src/assets/icons/comment-fill.svg
 apps/admin-x-design-system/src/assets/icons/piggybank.svg
 apps/admin-x-design-system/src/assets/icons/chevron-left.svg
 apps/admin-x-design-system/src/assets/icons/pen.svg
@@ -5246,6 +5254,7 @@ apps/admin-x-design-system/src/assets/icons/bills.svg
 apps/admin-x-design-system/src/assets/icons/modules-3.svg
 apps/admin-x-design-system/src/assets/icons/laptop.svg
 apps/admin-x-design-system/src/assets/icons/unsplash-logo.svg
+apps/admin-x-design-system/src/assets/icons/dotdotdot.svg
 apps/admin-x-design-system/src/assets/icons/arrow-right.svg
 apps/admin-x-design-system/src/assets/icons/brackets.svg
 apps/admin-x-design-system/src/assets/icons/world-clock.svg
@@ -5562,6 +5571,7 @@ apps/comments-ui/test/e2e/pagination.test.ts
 apps/comments-ui/test/e2e/auth-frame.test.ts
 apps/comments-ui/test/e2e/actions.test.ts
 apps/comments-ui/test/e2e/options.test.ts
+apps/comments-ui/test/e2e/labs.test.ts
 apps/comments-ui/test/utils/MockedApi.ts
 apps/comments-ui/test/utils/e2e.ts
 apps/comments-ui/test/utils/fixtures.ts

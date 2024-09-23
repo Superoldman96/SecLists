@@ -458,6 +458,7 @@ htdocs/install/mysql/tables/llx_hrm_evaluation-hrm.key.sql
 htdocs/install/mysql/tables/llx_chargesociales.key.sql
 htdocs/install/mysql/tables/llx_holiday_config.sql
 htdocs/install/mysql/tables/llx_accounting_account.key.sql
+htdocs/install/mysql/tables/llx_product_attribute_combination2val.key.sql
 htdocs/install/mysql/tables/llx_document_model.key.sql
 htdocs/install/mysql/tables/llx_c_input_method.key.sql
 htdocs/install/mysql/tables/llx_c_shipment_mode.key.sql
@@ -1557,6 +1558,7 @@ htdocs/expedition/note.php
 htdocs/expedition/shipment.php
 htdocs/expedition/class/expeditionstats.class.php
 htdocs/expedition/class/expeditionlinebatch.class.php
+htdocs/expedition/class/expeditionligne.class.php
 htdocs/expedition/class/expedition.class.php
 htdocs/expedition/class/api_shipments.class.php
 htdocs/expedition/js/lib_dispatch.js.php
@@ -3069,7 +3071,6 @@ htdocs/includes/jquery/plugins/jpicker/ChangeLog.txt
 htdocs/includes/jquery/plugins/jpicker/ReadMe.txt
 htdocs/includes/jquery/plugins/jpicker/jpicker-1.1.6.min.js
 htdocs/includes/jquery/plugins/jpicker/jpicker-1.1.6.js
-htdocs/includes/jquery/plugins/jpicker/Example.html
 htdocs/includes/jquery/plugins/colorpicker/jquery.colorpicker.js
 htdocs/includes/jquery/plugins/jeditable/jquery.jeditable.ckeditor.js
 htdocs/includes/jquery/plugins/jeditable/jquery.jeditable.ui-autocomplete.js
@@ -5363,6 +5364,7 @@ htdocs/mrp/mo_agenda.php
 htdocs/mrp/mo_production.php
 htdocs/mrp/class/mo.class.php
 htdocs/mrp/class/api_mos.class.php
+htdocs/mrp/class/moline.class.php
 htdocs/mrp/mo_card.php
 htdocs/mrp/js/lib_dispatch.js.php
 htdocs/mrp/mo_movements.php
@@ -12292,6 +12294,7 @@ htdocs/langs/lv_LV/members.lang
 htdocs/langs/lv_LV/boxes.lang
 htdocs/multicurrency/multicurrency_rate.php
 htdocs/multicurrency/class/multicurrency.class.php
+htdocs/multicurrency/class/currencyrate.class.php
 htdocs/multicurrency/class/api_multicurrencies.class.php
 htdocs/recruitment/recruitmentcandidature_agenda.php
 htdocs/recruitment/lib/recruitment.lib.php
@@ -13279,6 +13282,7 @@ htdocs/core/ajax/selectobject.php
 htdocs/core/ajax/contacts.php
 htdocs/core/ajax/pingresult.php
 htdocs/core/ajax/ajaxdirtree.php
+htdocs/core/ajax/getnews.php
 htdocs/core/ajax/extraparams.php
 htdocs/core/ajax/bankconciliate.php
 htdocs/core/ajax/row.php
@@ -13433,6 +13437,7 @@ htdocs/core/class/google.class.php
 htdocs/core/class/menubase.class.php
 htdocs/core/class/openid.class.php
 htdocs/core/class/html.formsms.class.php
+htdocs/core/class/commonsignedobject.class.php
 htdocs/core/class/notify.class.php
 htdocs/core/class/html.formcron.class.php
 htdocs/core/class/ctypent.class.php
