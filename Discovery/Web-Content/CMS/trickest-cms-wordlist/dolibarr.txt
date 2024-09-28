@@ -5345,6 +5345,7 @@ htdocs/expensereport/info.php
 htdocs/expensereport/note.php
 htdocs/expensereport/class/expensereport.class.php
 htdocs/expensereport/class/expensereport_rule.class.php
+htdocs/expensereport/class/expensereportline.class.php
 htdocs/expensereport/class/api_expensereports.class.php
 htdocs/expensereport/class/expensereportstats.class.php
 htdocs/expensereport/class/expensereport_ik.class.php
@@ -13154,6 +13155,7 @@ htdocs/core/lib/ws.lib.php
 htdocs/core/lib/salaries.lib.php
 htdocs/core/lib/cron.lib.php
 htdocs/core/lib/ldap.lib.php
+htdocs/core/lib/public.lib.php
 htdocs/core/lib/donation.lib.php
 htdocs/core/lib/fiscalyear.lib.php
 htdocs/core/lib/receiptprinter.lib.php
@@ -13259,6 +13261,7 @@ htdocs/core/tpl/extrafields_view.tpl.php
 htdocs/core/tpl/formlayoutai.tpl.php
 htdocs/core/tpl/extrafields_list_search_input.tpl.php
 htdocs/core/tpl/extrafields_list_print_fields.tpl.php
+htdocs/core/tpl/object_currency_amount.tpl.php
 htdocs/core/tpl/objectline_edit.tpl.php
 htdocs/core/tpl/passwordreset.tpl.php
 htdocs/core/tpl/extrafields_list_search_param.tpl.php
