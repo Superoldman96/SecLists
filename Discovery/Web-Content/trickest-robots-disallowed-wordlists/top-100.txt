@@ -1011,6 +1011,7 @@ _/mss/boq-cloud-web3-portal
 _/mss/boq-discover-labs
 _/mss/boq-geo
 _/mss/boq-identity
+_/mss/boq-makersuite
 _/mss/boq-nbu-monetization
 _/mss/boq-search
 _/mss/boq-search-engagement-post
@@ -1850,6 +1851,7 @@ de-de.www.cloudflare.com
 de-de/corporate/rechtliche-hinweise/impressum_de.aspx
 de-de/feedback
 de-de/lp
+de-de/searchresults
 de-en*/listing/*/favoriters
 de-en*/people/*/circle
 de-en*/people/*/favorites
@@ -2138,15 +2140,19 @@ employment_social/anticipedia/xwiki/bin/xmlrpc
 en-au.www.cloudflare.com
 en-au/feedback
 en-au/lp
+en-au/searchresults
 en-ca.www.cloudflare.com
 en-ca/feedback
 en-ca/lp
+en-ca/searchresults
 en-gb.www.cloudflare.com
 en-gb/feedback
 en-gb/lp
+en-gb/searchresults
 en-in.www.cloudflare.com
 en-in/feedback
 en-in/lp
+en-in/searchresults
 en-us.www.cloudflare.com
 en-us/windows/si/matrix.html
 en/microsoft-365
@@ -2170,8 +2176,10 @@ es*/shop/*/sold
 es-es.www.cloudflare.com
 es-es/feedback
 es-es/lp
+es-es/searchresults
 es-la/feedback
 es-la/lp
+es-la/searchresults
 es/*?order=
 es/*color=
 es/*customizable=
@@ -2370,6 +2378,7 @@ fr*/shop/*/sold
 fr-fr.www.cloudflare.com
 fr-fr/feedback
 fr-fr/lp
+fr-fr/searchresults
 fr/*?order=
 fr/*color=
 fr/*customizable=
@@ -2655,8 +2664,8 @@ hotelfinder/rpc
 hotels/rpc
 hp/video
 hpc/*/supported-applications.aspx?
-http://amzn.to/robots.txt
-http://tinyurl.com/robots.txt
+http://reddit.com/robots.txt
+http://yelp.com/robots.txt
 hub?category=
 hz/contact-us/ajax/initiate-trusted-contact
 hz/help/contact/*/message/$
@@ -2873,6 +2882,7 @@ it*/shop/*/sold
 it-it.www.cloudflare.com
 it-it/feedback
 it-it/lp
+it-it/searchresults
 it/*?order=
 it/*color=
 it/*customizable=
@@ -2922,6 +2932,7 @@ it/your
 ja-jp.www.cloudflare.com
 ja-jp/feedback
 ja-jp/lp
+ja-jp/searchresults
 japan/directx/default.asp?
 japan/enable/textview.asp?
 japan/products/library/search.asp?
@@ -3007,6 +3018,7 @@ knowmore
 ko-kr.www.cloudflare.com
 ko-kr/feedback
 ko-kr/lp
+ko-kr/searchresults
 labs/popgadget/search
 lamda/images
 landing/cmsnext-root
@@ -3586,6 +3598,9 @@ pl*/people/*/favorites
 pl*/shop/*/favoriters
 pl*/shop/*/sold
 pl-pl.www.cloudflare.com
+pl-pl/feedback
+pl-pl/lp
+pl-pl/searchresults
 pl/*?order=
 pl/*color=
 pl/*customizable=
@@ -3697,6 +3712,7 @@ pt*/shop/*/sold
 pt-br.www.cloudflare.com
 pt-br/feedback
 pt-br/lp
+pt-br/searchresults
 pt/*?order=
 pt/*color=
 pt/*customizable=
@@ -3818,6 +3834,9 @@ rss
 rss/people/*/reviews
 ru-ru.www.cloudflare.com
 ru-ru/events/platforma/materials/default.aspx?speaker*
+ru-ru/feedback
+ru-ru/lp
+ru-ru/searchresults
 rus/licensing/Unilateral.aspx/*
 rw/WashingtonPost/Content/Epaper
 rweb
@@ -3928,6 +3947,7 @@ search_results
 search_results/gigs
 search_suggest
 searchhistory
+searchresults
 sections
 secure
 seller_onboarding
@@ -4014,7 +4034,7 @@ shopping/seller
 shopping/suppliers/search
 shopping?
 shopstream
-showtimes/location/*http://instagram.com/robots.txt
+showtimes/location/*http://slideshare.net/robots.txt
 sidewiki/entry
 signature
 signin/inject
@@ -5190,10 +5210,12 @@ zh-cn
 zh-cn.www.cloudflare.com
 zh-cn/feedback
 zh-cn/lp
+zh-cn/searchresults
 zh-hans-cn.www.cloudflare.com
 zh-tw.www.cloudflare.com
 zh-tw/feedback
 zh-tw/lp
+zh-tw/searchresults
 zh_CN
 ~
 429.html

@@ -987,6 +987,7 @@ core/modules/file/tests/src/Kernel/Plugin/Validation/Constraint/FileNameLengthCo
 core/modules/file/tests/src/Kernel/Plugin/Validation/Constraint/FileExtensionSecureConstraintValidatorTest.php
 core/modules/file/tests/src/Kernel/Plugin/Validation/Constraint/FileSizeLimitConstraintValidatorTest.php
 core/modules/file/tests/src/Kernel/Plugin/Validation/Constraint/FileExtensionConstraintValidatorTest.php
+core/modules/file/tests/src/Kernel/Plugin/Validation/Constraint/FileEncodingConstraintValidatorTest.php
 core/modules/file/tests/src/Kernel/MoveTest.php
 core/modules/file/tests/src/Kernel/ComputedFileUrlTest.php
 core/modules/file/file.services.yml
@@ -1051,12 +1052,14 @@ core/modules/file/src/Plugin/migrate/field/d6/FileField.php
 core/modules/file/src/Plugin/migrate/field/d7/FileField.php
 core/modules/file/src/Plugin/migrate/destination/EntityFile.php
 core/modules/file/src/Plugin/Validation/Constraint/FileSizeLimitConstraintValidator.php
+core/modules/file/src/Plugin/Validation/Constraint/FileEncodingConstraintValidator.php
 core/modules/file/src/Plugin/Validation/Constraint/FileExtensionConstraintValidator.php
 core/modules/file/src/Plugin/Validation/Constraint/FileIsImageConstraintValidator.php
 core/modules/file/src/Plugin/Validation/Constraint/FileNameLengthConstraint.php
 core/modules/file/src/Plugin/Validation/Constraint/FileExtensionConstraint.php
 core/modules/file/src/Plugin/Validation/Constraint/FileExtensionSecureConstraint.php
 core/modules/file/src/Plugin/Validation/Constraint/FileUriUnique.php
+core/modules/file/src/Plugin/Validation/Constraint/FileEncodingConstraint.php
 core/modules/file/src/Plugin/Validation/Constraint/FileSizeLimitConstraint.php
 core/modules/file/src/Plugin/Validation/Constraint/FileExtensionSecureConstraintValidator.php
 core/modules/file/src/Plugin/Validation/Constraint/FileNameLengthConstraintValidator.php
@@ -4891,6 +4894,7 @@ core/modules/jsonapi/tests/modules/jsonapi_test_field_aliasing/jsonapi_test_fiel
 core/modules/jsonapi/tests/modules/jsonapi_test_resource_type_building/jsonapi_test_resource_type_building.services.yml
 core/modules/jsonapi/tests/modules/jsonapi_test_resource_type_building/jsonapi_test_resource_type_building.info.yml
 core/modules/jsonapi/tests/modules/jsonapi_test_resource_type_building/src/EventSubscriber/ResourceTypeBuildEventSubscriber.php
+core/modules/jsonapi/tests/modules/jsonapi_test_resource_type_building/src/EventSubscriber/LateResourceTypeBuildEventSubscriber.php
 core/modules/jsonapi/tests/modules/jsonapi_test_data_type/jsonapi_test_data_type.services.yml
 core/modules/jsonapi/tests/modules/jsonapi_test_data_type/src/Normalizer/StringNormalizer.php
 core/modules/jsonapi/tests/modules/jsonapi_test_data_type/src/Normalizer/TraversableObjectNormalizer.php
@@ -6579,6 +6583,7 @@ core/modules/field/tests/src/Unit/Plugin/migrate/process/d6/FieldSettingsTest.ph
 core/modules/field/tests/src/Unit/Plugin/migrate/process/d7/FieldInstanceSettingsTest.php
 core/modules/field/tests/src/Unit/Plugin/migrate/process/d7/FieldTypeDefaultsTest.php
 core/modules/field/tests/src/Unit/Plugin/migrate/process/d7/FieldSettingsTest.php
+core/modules/field/tests/src/Unit/Plugin/Field/FieldFormatter/StringFormatterTest.php
 core/modules/field/tests/src/Functional/MultipleWidgetFormTest.php
 core/modules/field/tests/src/Functional/Number/NumberFieldTest.php
 core/modules/field/tests/src/Functional/FunctionalString/StringFieldTest.php
@@ -8099,6 +8104,7 @@ core/modules/config/tests/config_other_module_config_test/config/optional/config
 core/modules/config/tests/config_other_module_config_test/config/optional/config_test.dynamic.other_module_test_optional_entity_unmet.yml
 core/modules/config/tests/config_other_module_config_test/config/optional/config_test.dynamic.other_module_test_unmet.yml
 core/modules/config/tests/src/FunctionalJavascript/ConfigEntityTest.php
+core/modules/config/tests/src/FunctionalJavascript/ConfigImportUIAjaxTest.php
 core/modules/config/tests/src/FunctionalJavascript/ConfigExportTest.php
 core/modules/config/tests/src/Unit/Menu/ConfigLocalTasksTest.php
 core/modules/config/tests/src/Functional/CacheabilityMetadataConfigOverrideIntegrationTest.php
@@ -8462,6 +8468,7 @@ core/modules/ckeditor5/tests/src/Unit/SourceEditingPluginTest.php
 core/modules/ckeditor5/tests/src/Unit/ListPluginTest.php
 core/modules/ckeditor5/tests/src/Unit/LanguagePluginTest.php
 core/modules/ckeditor5/tests/src/Unit/AlignmentPluginTest.php
+core/modules/ckeditor5/tests/src/Unit/VersionTest.php
 core/modules/ckeditor5/tests/src/Unit/CKEditor5Test.php
 core/modules/ckeditor5/tests/src/Unit/HTMLRestrictionsTest.php
 core/modules/ckeditor5/tests/src/Unit/HeadingPluginTest.php
@@ -8647,6 +8654,9 @@ core/modules/ckeditor5/js/ckeditor5.filter.admin.js
 core/modules/sdc/sdc.info.yml
 core/modules/serialization/serialization.install
 core/modules/serialization/serialization.info.yml
+core/modules/serialization/tests/modules/user_route_alter_test/user_route_alter_test.services.yml
+core/modules/serialization/tests/modules/user_route_alter_test/user_route_alter_test.info.yml
+core/modules/serialization/tests/modules/user_route_alter_test/src/Routing/RouteSubscriber.php
 core/modules/serialization/tests/modules/field_normalization_test/field_normalization_test.info.yml
 core/modules/serialization/tests/modules/field_normalization_test/field_normalization_test.services.yml
 core/modules/serialization/tests/modules/field_normalization_test/src/Normalization/TextItemSillyNormalizer.php
@@ -8680,6 +8690,7 @@ core/modules/serialization/tests/src/Unit/EntityResolver/UuidResolverTest.php
 core/modules/serialization/tests/src/Unit/EntityResolver/ChainEntityResolverTest.php
 core/modules/serialization/tests/src/Unit/EventSubscriber/DefaultExceptionSubscriberTest.php
 core/modules/serialization/tests/src/Functional/GenericTest.php
+core/modules/serialization/tests/src/Kernel/UserRouteAlterTest.php
 core/modules/serialization/tests/src/Kernel/NormalizerTestBase.php
 core/modules/serialization/tests/src/Kernel/MapDataNormalizerTest.php
 core/modules/serialization/tests/src/Kernel/FieldItemSerializationTest.php
@@ -11859,12 +11870,12 @@ core/lib/Drupal/Core/Recipe/RecipeAppliedEvent.php
 core/lib/Drupal/Core/Recipe/RecipeConfigurator.php
 core/lib/Drupal/Core/Recipe/RecipeInfoCommand.php
 core/lib/Drupal/Core/Recipe/ConfigConfigurator.php
+core/lib/Drupal/Core/Recipe/AllowListConfigStorage.php
 core/lib/Drupal/Core/Recipe/RecipePreExistingConfigException.php
 core/lib/Drupal/Core/Recipe/InputCollectorInterface.php
 core/lib/Drupal/Core/Recipe/UnknownRecipeException.php
 core/lib/Drupal/Core/Recipe/RecipeFileException.php
 core/lib/Drupal/Core/Recipe/InvalidConfigException.php
-core/lib/Drupal/Core/Recipe/RecipeExtensionConfigStorage.php
 core/lib/Drupal/Core/Recipe/RecipeRunner.php
 core/lib/Drupal/Core/Recipe/ConsoleInputCollector.php
 core/lib/Drupal/Core/Recipe/RecipeCommand.php
@@ -12562,6 +12573,7 @@ core/recipes/full_html_format_editor/config/filter.format.full_html.yml
 core/recipes/full_html_format_editor/config/editor.editor.full_html.yml
 core/recipes/administrator_role/tests/src/Functional/GenericTest.php
 core/recipes/administrator_role/recipe.yml
+core/recipes/administrator_role/config/user.role.administrator.yml
 core/recipes/core_recommended_front_end_theme/tests/src/Functional/GenericTest.php
 core/recipes/core_recommended_front_end_theme/recipe.yml
 core/recipes/editorial_workflow/tests/src/Functional/GenericTest.php
@@ -12639,6 +12651,7 @@ core/recipes/article_content_type/config/node.type.article.yml
 core/recipes/article_content_type/config/field.field.node.article.field_image.yml
 core/recipes/content_editor_role/tests/src/Functional/GenericTest.php
 core/recipes/content_editor_role/recipe.yml
+core/recipes/content_editor_role/config/user.role.content_editor.yml
 core/recipes/restricted_html_format/tests/src/Functional/GenericTest.php
 core/recipes/restricted_html_format/recipe.yml
 core/recipes/restricted_html_format/config/filter.format.restricted_html.yml
